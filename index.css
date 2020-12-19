@@ -12,7 +12,7 @@
 @font-face {
     font-family: 'Jost';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     src: url('./fonts/Jost-Regular.ttf') format('woff');
 }
 
@@ -127,14 +127,14 @@ h1,
 h2,
 h3 {
     font-family: 'Jost', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     line-height: var(--line-height-small);
     color: var(--white);
 }
 
 .heading-primary {
     line-height: 1;
-    font-size: var(--font-size-huge);
+    font-size: 10rem;
     font-weight: 400;
 }
 
