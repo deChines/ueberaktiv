@@ -60,6 +60,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main{
+  background-color: black;
+}
+
 @media(max-width: 1000px) {
     html {
         font-size: 52%;
