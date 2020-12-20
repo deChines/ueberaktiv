@@ -184,6 +184,10 @@ h3 {
         font-size: var(--font-size-large);
     }
 
+    .static-header {
+        font-size: var(--font-size-large);
+    }
+
     h2 {
         font-size: var(--font-size-medium-1);
     }
