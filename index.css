@@ -430,8 +430,13 @@ body:not(.user-is-tabbing) a:focus {
     /* color: var(--highlight); */
 }
 
-.tremble {
-  animation: shake 2s;
+#tremble {
+  animation: shake 1.8s;
+  animation-iteration-count: infinite;
+}
+
+#tremble:hover {
+  animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 

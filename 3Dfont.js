@@ -26,14 +26,19 @@ function showMouseXY(event) {
   target.setAttribute("style", "text-shadow:" + text3d(-(cX), cY) + "," + shadow3d(-(cX), cY) + ";transform:rotateY(" + cX + "deg) rotateX(" + cY + "deg);");
   var radX = (event.clientX > (window.innerWidth * .333333) ? (event.clientX < window.innerWidth * .666666 ? "center" : "right") : "left");
   var radY = (event.clientY > (window.innerHeight * .333333) ? (event.clientY < window.innerHeight * .666666 ? "center" : "bottom") : "top");
-  console.log("x: " + cX);
-  console.log("y: " + cY);
-  console.log("x: " + radX);
-  console.log("y: " + radY);
+  // console.log("x: " + cX);
+  // console.log("y: " + cY);
+  // console.log("x: " + radX);
+  // console.log("y: " + radY);
+
+  // if (radX == "center" && radY =="center") {
+  //   console.log("sweetspot");
+  //   document.getElementById("tremble").style.animation = "shake 0.5s";
+  // }
 
   var bgX = -((event.clientX-window.innerWidth)/window.innerWidth)*100;
   var bgY = -((event.clientY-window.innerHeight)/window.innerHeight)*100;
   body.setAttribute("style","background: radial-gradient(circle at "+bgX+"% "+bgY+"%, #eee 20%, #aaa); background: -webkit-radial-gradient("+bgX+"% "+bgY+"%,#eee 20%, #aaa);")
-  console.log("background: radial-gradient(circle at "+bgX+"% "+bgY+"%, #eee 20%, #aaa; background: -webkit-radial-gradient("+bgX+"% "+bgY+"%,#eee 20%, #aaa);")
+  // console.log("background: radial-gradient(circle at "+bgX+"% "+bgY+"%, #eee 20%, #aaa; background: -webkit-radial-gradient("+bgX+"% "+bgY+"%,#eee 20%, #aaa);")
 
 }
