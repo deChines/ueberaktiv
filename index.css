@@ -61,8 +61,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 @media(max-width: 1000px) {
     html {
         font-size: 52%;
@@ -150,7 +148,7 @@ h1
 
 .heading-primary {
     line-height: 1;
-    font-size: 10rem;
+    font-size: 8em;
     font-weight: 700;
 }
 
@@ -431,7 +429,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 #tremble {
-  animation: shake 1.8s;
+  animation: shake 0s;
   animation-iteration-count: infinite;
 }
 
@@ -661,4 +659,52 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     }
+}
+
+a,
+a:active{
+	background-color: transparent;
+	color : white;
+	font-weight : normal
+	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari 3.1 to 6.0 */
+    transition: color 0.5s, background-color 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+a:hover
+{
+	background-color: white;
+	color : black;
+}
+canvas {
+  display: block;
+}
+
+#main
+{
+	background : black;
+	position: absolute;
+  	margin: auto;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+#container,
+#content{
+	background : black;
+	position : relative;
+	color : white;
+  	margin: auto;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+}
+
+#content{
+	overflow : hidden;
+	height : auto;
+	display: flex;
 }
