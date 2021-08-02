@@ -1,425 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Verein Überaktiv
-  </title>
-
-  <meta name="description" content="Interaction Designers with passion.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Überaktiv" />
-  <link rel="stylesheet" href="index.css" />
+  <title>Überaktiv</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-  <!-- ***** BG ANIMATION ***** -->
 <body onresize="canvasresize()">
-  <div id="main">
-  	<div id="content">
-  	</div>
-  	<div id="container"></div>
-  </div>
 
-  <!-- ***** Header ***** -->
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Überaktiv</p>
+  </a>
+  <p class="device-notification--message">Überaktiv has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Überaktiv</p>
+          </a>
+          <button class="header--cta cta">Hire Us</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Team</span></li>
+            <!-- <li><span>Works</span></li> -->
+            <!-- <li><span>About</span></li> -->
+            <!-- <li><span>Contact</span></li> -->
+            <li><span>Work</span></li>
+            <li><span>Hire us</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+              <!-- ***** BG ANIMATION ***** -->
+            <!-- <div id="main" class="bg-animation">
+              <div id="content" class="ani-content">
+              </div>
+              <div id="container" class="ani-container"></div>
+            </div> -->
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>ÜBERAKTIV</h1>
+                <h2>Creating<br>interactive experiences<br>that matter.</h2>
+                <button class="cta">Hire Us
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/woman.gif" style="transform: scale(-1, 1);" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>We are</h3>
+                  <p>Mélanie Abbet,
+                    Claudia Buck,
+                    Randy Chen,
+                    Jennifer Duarte,
+                    Fiona Good,
+                    Andrin Gorgi,
+                    Marcial koch,
+                    Stefan Lustenberger
+                  </p>
+                </a>
+                <a href="#0">
+                  <h3>About</h3>
+                  <p>Überaktiv represents an association of interaction designers who share an enthusiasm for the collective design of digital and interactive projects.</p>
+                </a>
+                <a href="https://goo.gl/maps/ycLC1xUgRGAZw4Hj6"  target="_blank">
+                  <h3>Impressum</h3>
+                  <p>Kollektiv Überaktiv<br>
+                    Weinbergstrasse 152<br>
+                    8006 Zürich<br>
+                    Schweiz
+                  </p>
+                </a>
+              </div>
+            </div>
           </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+          <li class="l-section section">
+            <div class="team">
+              <h2>Members</h2>
+              <div class="team--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/1x/1.png" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Fiona Good</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/1x/2.png" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Marcial Koch</p>
+                      <p class="slider--item-description">
+                        Spacial Design | Sound Design<br></a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/1x/3.png" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Jennifer Duarte</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- <li class="l-section section">
+            <div class="work">
+              <h2>Selected work</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-victory.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Victory</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Metiew &amp; Smith</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Alex Nowak</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li> -->
+          <li class="l-section section">
+            <div class="about">
+              <!-- <div class="about--banner">
+                <h2>We<br>believe in<br>passionate<br>people</h2>
+                <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="assets/img/about-visual.png" alt="About Us">
+              </div> -->
+              <div class="about--options">
+                <a href="#0">
+                </a>
+                <a href="#0">
+                </a>
+                <a href="#0">
+                </a>
+              </div>
+            </div>
+          </li>
+          <!-- <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>Verein Überaktiv, Weinbergstrasse 152, Schweiz</p>
+                    <a href="mailto:ouremail@gmail.com">ueberaktiv@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li> -->
+          <li class="l-section section">
+            <div class="hire">
+              <h2>You want us to do</h2>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" type="checkbox" value="app design">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      App Design
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Graphic Design
+                    </label>
+                    <input id="opt-3" type="checkbox" value="motion design">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Motion Design
+                    </label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-4" type="checkbox" value="ux design">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      UX Design
+                    </label>
+                    <input id="opt-5" type="checkbox" value="webdesign">
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Webdesign
+                    </label>
+                    <input id="opt-6" type="checkbox" value="marketing">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Marketing
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <input type="submit" value="Send Request">
+              </form>
+            </div>
           </li>
         </ul>
-      </nav>
+      </div>
+      <img src="assets/img/1.jpg" alt="Welcome">
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary" id="tremble">
-          <span>ÜBERAKTIV</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <!-- <p>Interaction Designers with passion</p>
-        <a href="#contact" class="btn btn--highlight">Get in touch</a> -->
-      </div>
-    </div>
-  </header>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Team</li>
+    <li>Work</li>
+    <li>Hire us</li>
+  </ul>
+</div>
 
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>Our Work</h2>
-        <div class="work__boxes">
-<!-- work-box -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Journey to Recovery</h3>
-              <p>
-                In a medical treatment that improves the quality of sleep, children lose interest as the therapy proceeds. Each day, they face tedious and repetitive tasks. Our solution creates a child-friendly
-experience, using a captivating story to motivate, entertain and
-educate children along their journey.
-              </p>
-              <ul class="work__list">
-                <li>Mobile application</li>
-                <li>UX Design</li>
-                <li>Service Design</li>
-                <li>Awarded</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="http://journey-to-recovery.ch" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.jpg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Zauberwald</h3>
-              <p>
-                As a class, we create an installation on the topic: «sustainable energy
-sources» for the 2018 edition of «Zauberwald» in Lenzerheide.
-Sponsorized by EWZ, Our installation was composed of 6 input device
-and 6 visualization. The visitors had the possibility to generate «power» by
-interacting with the objects.
-              </p>
-              <ul class="work__list">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <!-- <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a> -->
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.jpg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>DA Z - App</h3>
-              <p>
-                For the first Digital Art Zürich Festival this event Riverside
-Culture was looking for a design concept of a mobile app that
-would provide information about the festival’s works and artists
-to the visitors. In addition, visitors should have the opportunity to
-evaluate performances and exhibits at all locations in a playful
-and contemporary way in order to automatically participate in the
-Audience Award.
-              </p>
-              <ul class="work__list">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <!-- <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a> -->
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.jpg" class="work__image" alt="Project 3" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
-        </div>
-      </div>
-    </section> -->
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Us</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              Verein Überaktiv represents an association of Interaction Designers who are passionate about
-designing digital and interactive projects together. It consists of Interaction Design Alumni from the
-Zurich University of the Arts (ZHdK), who are now active in various fields of work (education, health,
-industrial design, advertising, etc.) and who wish to combine their individual expertise in interdisciplinary
-works. Überaktiv pursues a people-centred, collaborative approach. Their focus lies on user
-experience design, web and mobile interface design, service design, interactive installations and
-spatial interactions.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">More of us</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/team.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a captivating User Experience for your business? or looking for any kind of
-          consultation? or want to meet us
-          or just want to say "Hi 👋" in any case feel free to Let us know.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">ueberaktiv@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <!-- <footer role="contentinfo" class="footer">
-    <div class="row">
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="#" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="#" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer> -->
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-  <!-- <script src="./3Dfont.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/vendor/hammer-2.0.8.js"></script>
   <!-- vertex shader -->
-<script id="vertexShader" type="x-shader/x-vertex">
-  void main() {
-    gl_Position = vec4(position, 1.0);
-  }
-</script>
-
+  <script id="vertexShader" type="x-shader/x-vertex">
+    void main() {
+      gl_Position = vec4(position, 1.0);
+    }
+  </script>
 <!-- fragment shader -->
 <script id="fragmentShader" type="x-shader/x-fragment">
-    uniform vec2 resolution;
-    uniform float time;
-    uniform vec2 mouse;
+  uniform vec2 resolution;
+  uniform float time;
+  uniform vec2 mouse;
 
-    #define TWO_PI 6.28318530718
+  #define TWO_PI 6.28318530718
 
-    mat2 rotate2d(float _angle){
-      return mat2(cos(_angle),-sin(_angle),
-            sin(_angle),cos(_angle));
+  mat2 rotate2d(float _angle){
+    return mat2(cos(_angle),-sin(_angle),
+          sin(_angle),cos(_angle));
+  }
+
+  vec2 rotateFrom(vec2 uv, vec2 center, float angle){
+    vec2 uv_ = uv - center;
+    uv_ =  rotate2d(angle) * uv_;
+    uv_ = uv_ + center;
+
+    return uv_;
+  }
+
+  float random(float value){
+    return fract(sin(value) * 43758.5453123);
+  }
+
+  float random(vec2 tex){
+    return fract(sin(dot(tex.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+  }
+
+  vec2 random2D(vec2 uv){
+    uv = vec2(dot(uv, vec2(127.1, 311.7)), dot(uv, vec2(269.5, 183.3)));
+    return -1.0 + 2.0 * fract(sin(uv) * 43758.5453123);
+  }
+
+  vec3 random3D(vec3 uv){
+    uv = vec3(dot(uv, vec3(127.1, 311.7, 120.9898)), dot(uv, vec3(269.5, 183.3, 150.457)), dot(uv, vec3(380.5, 182.3, 170.457)));
+    return -1.0 + 2.0 * fract(sin(uv) * 43758.5453123);
+  }
+
+  float cubicCurve(float value){
+    return value * value * (3.0 - 2.0 * value); // custom cubic curve
+  }
+
+  vec2 cubicCurve(vec2 value){
+    return value * value * (3.0 - 2.0 * value); // custom cubic curve
+  }
+
+  vec3 cubicCurve(vec3 value){
+    return value * value * (3.0 - 2.0 * value); // custom cubic curve
+  }
+
+  float noise(vec2 uv){
+    vec2 iuv = floor(uv);
+    vec2 fuv = fract(uv);
+    vec2 suv = cubicCurve(fuv);
+
+    float dotAA_ = dot(random2D(iuv + vec2(0.0)), fuv - vec2(0.0));
+    float dotBB_ = dot(random2D(iuv + vec2(1.0, 0.0)), fuv - vec2(1.0, 0.0));
+    float dotCC_ = dot(random2D(iuv + vec2(0.0, 1.0)), fuv - vec2(0.0, 1.0));
+    float dotDD_ = dot(random2D(iuv + vec2(1.0, 1.0)), fuv - vec2(1.0, 1.0));
+
+    return mix(
+      mix(dotAA_, dotBB_,	suv.x),
+      mix(dotCC_, dotDD_, suv.x),
+      suv.y);
+  }
+
+  float noise(vec3 uv){
+    vec3 iuv = floor(uv);
+    vec3 fuv = fract(uv);
+    vec3 suv = cubicCurve(fuv);
+
+    float dotAA_ = dot(random3D(iuv + vec3(0.0)), fuv - vec3(0.0));
+    float dotBB_ = dot(random3D(iuv + vec3(1.0, 0.0, 0.0)), fuv - vec3(1.0, 0.0, 0.0));
+    float dotCC_ = dot(random3D(iuv + vec3(0.0, 1.0, 0.0)), fuv - vec3(0.0, 1.0, 0.0));
+    float dotDD_ = dot(random3D(iuv + vec3(1.0, 1.0, 0.0)), fuv - vec3(1.0, 1.0, 0.0));
+
+    float dotEE_ = dot(random3D(iuv + vec3(0.0, 0.0, 1.0)), fuv - vec3(0.0, 0.0, 1.0));
+    float dotFF_ = dot(random3D(iuv + vec3(1.0, 0.0, 1.0)), fuv - vec3(1.0, 0.0, 1.0));
+    float dotGG_ = dot(random3D(iuv + vec3(0.0, 1.0, 1.0)), fuv - vec3(0.0, 1.0, 1.0));
+    float dotHH_ = dot(random3D(iuv + vec3(1.0, 1.0, 1.0)), fuv - vec3(1.0, 1.0, 1.0));
+
+    float passH0 = mix(
+      mix(dotAA_, dotBB_,	suv.x),
+      mix(dotCC_, dotDD_, suv.x),
+      suv.y);
+
+    float passH1 = mix(
+      mix(dotEE_, dotFF_,	suv.x),
+      mix(dotGG_, dotHH_, suv.x),
+      suv.y);
+
+    return mix(passH0, passH1, suv.z);
+  }
+
+  float rect(vec2 uv, vec2 length, float smooth){
+    float dx = abs(uv.x - 0.3);
+    float dy = abs(uv.y - 0.3);
+    float lenx = 1.0 - smoothstep(length.x - smooth, length.x + smooth, dx);
+    float leny = 1.0 - smoothstep(length.y - smooth, length.y + smooth, dy);
+
+    return lenx * leny;
+  }
+
+  vec4 addGrain(vec2 uv, float time, float grainIntensity){
+      float grain = random(fract(uv * time)) * grainIntensity;
+      return vec4(vec3(grain), 1.0);
+  }
+
+  void main(){
+    vec2 uv = gl_FragCoord.xy / resolution.xy;
+
+    float mouseOffset = length(vec2(0.1) - mouse * 0.1);
+
+    #define OCTAVES 6
+    float speedOffset = 1.25;// + mousex;
+    float trembleOffset = random(time) * 0.001;
+
+    vec2 splitRGB = vec2(0.005, 0.01);
+
+    vec3 color1 = vec3(-0, -1, -1);
+    vec3 color2 = vec3(0, 0, 0);
+    // vec3 backgroundColor = vec3(0.000, 0.0, 0.05);
+    vec3 backgroundColor = vec3(1, 1, 1);
+    vec3 color = vec3(0.0);
+
+    for(int i=1; i<OCTAVES; i++){
+
+      float eta = (noise(vec3(time * float(i))) * 0.15 + 0.15) * 0.1;
+      vec2 ruv = rotateFrom(uv, vec2(1.0), eta + TWO_PI * 0.125);
+
+      float opacity = float(i) / float(OCTAVES);
+      vec2 nuv = ruv * vec2(1.0, 80.0 / float(i));
+      vec2 iuv = floor(nuv);
+      vec2 fuv = fract(nuv);
+
+      vec2 offset = vec2(random(vec2(iuv.y, float(i))), 0.0) * 2.0 - 1.0;
+      float minSpeed = 0.5 * float(i) * speedOffset;
+      float maxSpeed = 1.0 * float(i) * speedOffset;
+      float speed = minSpeed + random(vec2(iuv.y * 2.5, float(i))) * (maxSpeed - minSpeed);
+      vec2 animation = vec2(time * speed, 0.0) * mouseOffset;
+      float minLength = 0.01;
+      float maxLength = 0.04;
+      float len = minLength + random(vec2(iuv.y * 5.0, float(i))) * (maxLength - minLength);
+      float minThick = 0.03;
+      float maxThick = 0.1;
+      float thick = minThick + random(vec2(iuv.y * 10.0, float(i))) * (maxThick - minThick);
+      vec2 tremble = vec2(0.0, trembleOffset * float(i));
+      float randIndex =  random(vec2(iuv.y, float(i)));
+      randIndex = step(0.15, randIndex);
+
+      float randColorIndex = random(vec2(iuv.y * 10.0, float(i * i)));
+      vec3 lineColor = mix(color2, color1, randColorIndex);
+
+      float recR = rect(fract(tremble + fuv + splitRGB + offset + animation), vec2(len, maxThick), 0.01) * randIndex * opacity;
+      float recG = rect(fract(tremble + fuv + offset + animation), vec2(len, maxThick), 0.01) * randIndex * opacity;
+      float recB = rect(fract(tremble + fuv - splitRGB + offset + animation), vec2(len, maxThick), 0.01) * randIndex * opacity;
+
+      color += lineColor * vec3(recR, recG, recB);
     }
 
-    vec2 rotateFrom(vec2 uv, vec2 center, float angle){
-      vec2 uv_ = uv - center;
-      uv_ =  rotate2d(angle) * uv_;
-      uv_ = uv_ + center;
+    vec4 grain = addGrain(uv, time, 0.01);
 
-      return uv_;
-    }
-
-    float random(float value){
-      return fract(sin(value) * 43758.5453123);
-    }
-
-    float random(vec2 tex){
-      return fract(sin(dot(tex.xy, vec2(12.9898, 78.233))) * 43758.5453123);
-    }
-
-    vec2 random2D(vec2 uv){
-      uv = vec2(dot(uv, vec2(127.1, 311.7)), dot(uv, vec2(269.5, 183.3)));
-      return -1.0 + 2.0 * fract(sin(uv) * 43758.5453123);
-    }
-
-    vec3 random3D(vec3 uv){
-      uv = vec3(dot(uv, vec3(127.1, 311.7, 120.9898)), dot(uv, vec3(269.5, 183.3, 150.457)), dot(uv, vec3(380.5, 182.3, 170.457)));
-      return -1.0 + 2.0 * fract(sin(uv) * 43758.5453123);
-    }
-
-    float cubicCurve(float value){
-      return value * value * (3.0 - 2.0 * value); // custom cubic curve
-    }
-
-    vec2 cubicCurve(vec2 value){
-      return value * value * (3.0 - 2.0 * value); // custom cubic curve
-    }
-
-    vec3 cubicCurve(vec3 value){
-      return value * value * (3.0 - 2.0 * value); // custom cubic curve
-    }
-
-    float noise(vec2 uv){
-      vec2 iuv = floor(uv);
-      vec2 fuv = fract(uv);
-      vec2 suv = cubicCurve(fuv);
-
-      float dotAA_ = dot(random2D(iuv + vec2(0.0)), fuv - vec2(0.0));
-      float dotBB_ = dot(random2D(iuv + vec2(1.0, 0.0)), fuv - vec2(1.0, 0.0));
-      float dotCC_ = dot(random2D(iuv + vec2(0.0, 1.0)), fuv - vec2(0.0, 1.0));
-      float dotDD_ = dot(random2D(iuv + vec2(1.0, 1.0)), fuv - vec2(1.0, 1.0));
-
-      return mix(
-        mix(dotAA_, dotBB_,	suv.x),
-        mix(dotCC_, dotDD_, suv.x),
-        suv.y);
-    }
-
-    float noise(vec3 uv){
-      vec3 iuv = floor(uv);
-      vec3 fuv = fract(uv);
-      vec3 suv = cubicCurve(fuv);
-
-      float dotAA_ = dot(random3D(iuv + vec3(0.0)), fuv - vec3(0.0));
-      float dotBB_ = dot(random3D(iuv + vec3(1.0, 0.0, 0.0)), fuv - vec3(1.0, 0.0, 0.0));
-      float dotCC_ = dot(random3D(iuv + vec3(0.0, 1.0, 0.0)), fuv - vec3(0.0, 1.0, 0.0));
-      float dotDD_ = dot(random3D(iuv + vec3(1.0, 1.0, 0.0)), fuv - vec3(1.0, 1.0, 0.0));
-
-      float dotEE_ = dot(random3D(iuv + vec3(0.0, 0.0, 1.0)), fuv - vec3(0.0, 0.0, 1.0));
-      float dotFF_ = dot(random3D(iuv + vec3(1.0, 0.0, 1.0)), fuv - vec3(1.0, 0.0, 1.0));
-      float dotGG_ = dot(random3D(iuv + vec3(0.0, 1.0, 1.0)), fuv - vec3(0.0, 1.0, 1.0));
-      float dotHH_ = dot(random3D(iuv + vec3(1.0, 1.0, 1.0)), fuv - vec3(1.0, 1.0, 1.0));
-
-      float passH0 = mix(
-        mix(dotAA_, dotBB_,	suv.x),
-        mix(dotCC_, dotDD_, suv.x),
-        suv.y);
-
-      float passH1 = mix(
-        mix(dotEE_, dotFF_,	suv.x),
-        mix(dotGG_, dotHH_, suv.x),
-        suv.y);
-
-      return mix(passH0, passH1, suv.z);
-    }
-
-    float rect(vec2 uv, vec2 length, float smooth){
-      float dx = abs(uv.x - 0.3);
-      float dy = abs(uv.y - 0.3);
-      float lenx = 1.0 - smoothstep(length.x - smooth, length.x + smooth, dx);
-      float leny = 1.0 - smoothstep(length.y - smooth, length.y + smooth, dy);
-
-      return lenx * leny;
-    }
-
-    vec4 addGrain(vec2 uv, float time, float grainIntensity){
-        float grain = random(fract(uv * time)) * grainIntensity;
-        return vec4(vec3(grain), 1.0);
-    }
-
-    void main(){
-      vec2 uv = gl_FragCoord.xy / resolution.xy;
-
-      float mouseOffset = length(vec2(0.1) - mouse) * 0.1;
-
-      #define OCTAVES 6
-      float speedOffset = 1.25;// + mousex;
-      float trembleOffset = random(time) * 0.001;
-
-      vec2 splitRGB = vec2(0.005, 0.01);
-
-      vec3 color1 = vec3(1.0, 0.1, 0.1);
-      vec3 color2 = vec3(0.1, 0.1, 1.0);
-      vec3 backgroundColor = vec3(0.005, 0.0, 0.05);
-      vec3 color = vec3(0.0);
-
-      for(int i=1; i<OCTAVES; i++){
-
-        float eta = (noise(vec3(time * float(i))) * 0.15 + 0.15) * 0.1;
-        vec2 ruv = rotateFrom(uv, vec2(1.0), eta + TWO_PI * 0.125);
-
-        float opacity = float(i) / float(OCTAVES);
-        vec2 nuv = ruv * vec2(1.0, 80.0 / float(i));
-        vec2 iuv = floor(nuv);
-        vec2 fuv = fract(nuv);
-
-        vec2 offset = vec2(random(vec2(iuv.y, float(i))), 0.0) * 2.0 - 1.0;
-        float minSpeed = 0.5 * float(i) * speedOffset;
-        float maxSpeed = 1.0 * float(i) * speedOffset;
-        float speed = minSpeed + random(vec2(iuv.y * 2.5, float(i))) * (maxSpeed - minSpeed);
-        vec2 animation = vec2(time * speed, 0.0) * mouseOffset;
-        float minLength = 0.01;
-        float maxLength = 0.1;
-        float len = minLength + random(vec2(iuv.y * 5.0, float(i))) * (maxLength - minLength);
-        float minThick = 0.05;
-        float maxThick = 0.15;
-        float thick = minThick + random(vec2(iuv.y * 10.0, float(i))) * (maxThick - minThick);
-        vec2 tremble = vec2(0.0, trembleOffset * float(i));
-        float randIndex =  random(vec2(iuv.y, float(i)));
-        randIndex = step(0.15, randIndex);
-
-        float randColorIndex = random(vec2(iuv.y * 20.0, float(i * i)));
-        vec3 lineColor = mix(color1, color2, randColorIndex);
-
-        float recR = rect(fract(tremble + fuv + splitRGB + offset + animation), vec2(len, maxThick), 0.01) * randIndex * opacity;
-        float recG = rect(fract(tremble + fuv + offset + animation), vec2(len, maxThick), 0.01) * randIndex * opacity;
-        float recB = rect(fract(tremble + fuv - splitRGB + offset + animation), vec2(len, maxThick), 0.01) * randIndex * opacity;
-
-        color += lineColor * vec3(recR, recG, recB);
-      }
-
-      vec4 grain = addGrain(uv, time, 0.01);
-
-      gl_FragColor = vec4(backgroundColor + color, 1.0) + grain;
-    }
+    gl_FragColor = vec4(backgroundColor + color, 1.0) + grain;
+  }
 </script>
-<script src="libs.js"></script>
-<script src="libs2.js"></script>
-<script src="speed.js"></script>
+<script src="assets/js/libs.js"></script>
+<script src="assets/js/libs2.js"></script>
+<script src="assets/js/speed.js"></script>
+<script src="assets/js/functions.js"></script>
 </body>
-
 </html>
