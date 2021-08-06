@@ -1306,196 +1306,60 @@ body canvas {
 
 .about--banner {
   position: relative;
-  height: 475px;
-}
-
-.about--banner::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 200px;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-  border: 5px solid #ff7070;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-}
-
-.about--banner::after {
-  content: "";
-  position: absolute;
-  top: 75px;
-  left: 400px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  width: 10px;
-  height: 10px;
-  background-color: #ff7070;
-}
-
-.about--banner h2 {
-  position: relative;
-  margin-top: 35px;
-  font-size: 68px;
-  font-weight: 900;
-  line-height: 1;
-  z-index: 1;
-}
-
-.about--banner h2::before {
-  content: "";
-  position: absolute;
-  top: 60px;
-  left: 268px;
-  width: 30px;
-  height: 30px;
-  background-color: #ff7070;
-  border-radius: 50%;
-}
-
-.about--banner h2::after {
-  content: "";
-  position: absolute;
-  top: 255px;
-  left: 255px;
-  width: 10px;
-  height: 10px;
-  background-color: #ff7070;
-}
-
-.about--banner a {
-  padding: 5px 17px 5px 0;
-  text-decoration: none;
-  color: #0c0c0c;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: transparent;
-}
-
-.about--banner a:hover svg {
-  left: 10px;
-}
-
-.about--banner a svg {
-  position: relative;
-  left: 5px;
-  width: 15px;
-  fill: #fff;
-  -webkit-transition: left .2s ease-in-out;
-  transition: left .2s ease-in-out;
-}
-
-.about--banner img {
-  position: absolute;
-  bottom: -90px;
-  right: -12px;
-}
-
-.about--options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 70vh;
 }
 
-.about--options > a {
-  position: relative;
-  width: calc(100%/ 3.2);
-  height: 400px;
-  text-decoration: none;
-  color: #0c0c0c;
+.about--banner .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: none;
+  transition: flex 0.8s ease, -webkit-filter 0.8s ease;
+  -webkit-filter: grayscale(100%);
 }
 
-.about--options > a:nth-child(1) {
-  background-image: url("../img/about-winners.jpg");
+.about--banner .item:hover {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
-.about--options > a:nth-child(2) {
-  background-image: url("../img/about-philosophy.jpg");
+.about--banner .item-1 {
+  background-image: url("../../assets/img/work/1.jpg");
 }
 
-.about--options > a:nth-child(3) {
-  background-image: url("../img/about-history.jpg");
+.about--banner .item-2 {
+  background-image: url("../../assets/img/work/2.jpg");
 }
 
-.about--options > a:hover h3 {
-  bottom: -50px;
+.about--banner .item-3 {
+  background-image: url("../../assets/img/work/3.jpg");
 }
 
-.about--options h3 {
-  position: absolute;
-  bottom: -38px;
-  left: 10px;
-  font-size: 16px;
-  text-transform: uppercase;
-  -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
-  transition: bottom .2s ease-in-out, left .2s ease-in-out;
+.about--banner .item-4 {
+  background-image: url("../../assets/img/work/4.png");
+}
+
+.about--banner .item-5 {
+  background-image: url("../../assets/img/work/5.jpg");
 }
 
 @media (max-width: 767px) {
   .about--banner {
     height: 305px;
-  }
-  .about--banner::before {
-    top: 0;
-    left: 125px;
-  }
-  .about--banner::after {
-    top: 35px;
-    left: 260px;
-  }
-  .about--banner h2 {
-    margin-top: 10px;
-    font-size: 44px;
-  }
-  .about--banner h2::before {
-    top: 28px;
-    left: 168px;
-  }
-  .about--banner h2::after {
-    top: 163px;
-    left: 163px;
-  }
-  .about--banner img {
-    width: 315px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about--banner {
-    height: auto;
-  }
-  .about--banner::before {
-    left: 155px;
-  }
-  .about--banner::after {
-    left: 310px;
-  }
-  .about--banner h2 {
-    margin-top: 0;
-    font-size: 55px;
-  }
-  .about--banner h2::before {
-    top: 43px;
-    left: 214px;
-  }
-  .about--banner h2::after {
-    top: 205px;
-    left: 205px;
-  }
-  .about--banner img {
-    display: none;
-  }
-  .about--options {
-    display: none;
   }
 }
 
