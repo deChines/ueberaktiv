@@ -7,7 +7,8 @@ var canvas = document.querySelector("#scene"),
 
 var colors = "rgb(0,0,0,0.9)";
 
-var copy = document.querySelector("#copy");
+var text = document.querySelector("#text");
+var mobileText = document.querySelector("#mobileText");
 
 var ww = canvas.width = window.innerWidth/2;
 var wh = canvas.height = window.innerHeight/2;
@@ -20,7 +21,7 @@ function Particle(x,y){
     y: y
   };
   if (canvas.width <= 600) {
-    this.r =  Math.random()*3 + 1;
+    this.r =  Math.random()*3 + 2;
   } else if (canvas.width <= 767) {
     this.r =  Math.random()*4 + 2;
   } else {
@@ -53,8 +54,8 @@ Particle.prototype.render = function() {
   ctx.fill();
   var distance = null;
   if (canvas.width <= 600) {
-    var distance = 0.1;
-  } else if (canvas.width <= 767) {
+    var distance = 0.2;
+  } else if (canvas.width <= 1024) {
     var distance = 0.2;
   } else {
     var distance = 0.3;
@@ -105,15 +106,26 @@ function initScene(){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   if (canvas.width <= 600) {
-    ctx.font = "bold "+(ww/7)+"px sans-serif";
-  } else if (canvas.width <= 767) {
-    ctx.font = "bold "+(ww/7)+"px sans-serif";
+    ctx.font = "bold "+(ww/2.8)+"px sans-serif";
+  } else if (canvas.width <= 1024) {
+    ctx.font = "bold "+(ww/8)+"px sans-serif";
   } else {
     ctx.font = "bold "+(ww/10)+"px sans-serif";
   }
   
   ctx.textAlign = "center";
-  ctx.fillText(copy.value, ww/2, wh/2);
+  //ctx.fillText(copy.value, ww/2, wh/2);
+  let textPos = wh/2;
+  if (canvas.width <= 600) {
+      if (canvas.height <= 812) {
+        textPos = wh/2.5;
+      } else {
+        let textPos = wh/5;
+      }
+    wrapText(ctx, mobileText.value, ww/1.85, textPos, canvas.width, ww/3.5);
+  } else {
+    wrapText(ctx, text.value, ww/2, textPos, canvas.width, ww/3.5);
+  }
 
   var data  = ctx.getImageData(0, 0, ww, wh).data;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -125,7 +137,7 @@ function initScene(){
 
   if (canvas.width <= 600) {
     initamount = 100;
-  } else if (canvas.width <= 850) {
+  } else if (canvas.width <= 1024) {
     initamount = 150;
   } else {
     initamount = 250;
@@ -140,6 +152,26 @@ function initScene(){
   }
   amount = particles.length;
 
+}
+
+function wrapText(context, text, x, y, maxWidth, lineHeight) {
+  var words = text.split(' ');
+  var line = '';
+
+  for(var n = 0; n < words.length; n++) {
+    var testLine = line + words[n] + ' ';
+    var metrics = context.measureText(testLine);
+    var testWidth = metrics.width;
+    if (testWidth > maxWidth && n > 0) {
+      context.fillText(line, x, y);
+      line = words[n] + ' ';
+      y += lineHeight;
+    }
+    else {
+      line = testLine;
+    }
+  }
+  context.fillText(line, x, y);
 }
 
 function onMouseClick(){
@@ -157,7 +189,6 @@ function render(a) {
   }
 };
 
-copy.addEventListener("keyup", initScene);
 window.addEventListener("resize", initScene);
 window.addEventListener("mousemove", onMouseMove);
 window.addEventListener("touchmove", onTouchMove);
