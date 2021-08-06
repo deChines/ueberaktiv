@@ -174,12 +174,12 @@ function wrapText(context, text, x, y, maxWidth, lineHeight) {
   context.fillText(line, x, y);
 }
 
-function onMouseClick(){
-  radius++;
-  if(radius ===5){
-    radius = 0;
-  }
-}
+// function onMouseClick(){
+//   radius++;
+//   if(radius ===5){
+//     radius = 0;
+//   }
+// }
 
 function render(a) {
   requestAnimationFrame(render);
