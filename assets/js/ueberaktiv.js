@@ -192,7 +192,7 @@ function render(a) {
 window.addEventListener("resize", initScene);
 window.addEventListener("mousemove", onMouseMove);
 window.addEventListener("touchmove", onTouchMove);
-window.addEventListener("click", onMouseClick);
+//window.addEventListener("click", onMouseClick);
 window.addEventListener("touchend", onTouchEnd);
 initScene();
 requestAnimationFrame(render);
