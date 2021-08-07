@@ -1314,7 +1314,7 @@ body canvas {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  height: 70vh;
+  height: 550px;
 }
 
 .about--banner .item {
@@ -1342,7 +1342,7 @@ body canvas {
 }
 
 .about--banner .item-2 {
-  background-image: url("../../assets/img/work/2.jpg");
+  background-image: url("../../assets/img/work/2-1.jpg");
 }
 
 .about--banner .item-3 {

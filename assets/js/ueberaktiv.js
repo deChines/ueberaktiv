@@ -5,7 +5,8 @@ var canvas = document.querySelector("#scene"),
   mouse = {x:0,y:0},
   radius = 1;
 
-var colors = "rgb(0,0,0,0.9)";
+//var colors = ["rgb(0,0,0,0.6)","rgb(0,0,0,0.9)","rgb(0,0,0,0.8)", "rgb(0,0,0,0.7)", "rgb(255, 102, 102)"];
+var colors = "rgb(0,0,0,0.8)";
 
 var text = document.querySelector("#text");
 var mobileText = document.querySelector("#mobileText");
@@ -34,6 +35,7 @@ function Particle(x,y){
   this.friction = Math.random()*0.05 + 0.90;
 
   this.color = colors;
+  //this.color = colors[Math.floor(Math.random()*5)];
 }
 
 Particle.prototype.render = function() {
@@ -116,6 +118,10 @@ function initScene(){
   ctx.textAlign = "center";
   //ctx.fillText(copy.value, ww/2, wh/2);
   let textPos = wh/2;
+
+  if (canvas.width <= 767 && canvas.width > 600) {
+    textPos = wh/3;
+  }
   if (canvas.width <= 600) {
       if (canvas.height <= 812) {
         textPos = wh/2.5;
@@ -136,7 +142,7 @@ function initScene(){
   let initamount = 300;
 
   if (canvas.width <= 600) {
-    initamount = 100;
+    initamount = 80;
   } else if (canvas.width <= 1024) {
     initamount = 150;
   } else {
