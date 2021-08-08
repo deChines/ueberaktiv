@@ -22,14 +22,19 @@ function Particle(x,y){
     y: y
   };
   if (canvas.width <= 600) {
-    this.r =  Math.random()*3 + 2;
+    this.r =  Math.random()*4 + 3;
+    this.vx = (Math.random()-0.5)*100;
+    this.vy = (Math.random()-0.5)*100;
   } else if (canvas.width <= 767) {
     this.r =  Math.random()*4 + 2;
+    this.vx = (Math.random()-0.5)*500;
+    this.vy = (Math.random()-0.5)*500;
   } else {
     this.r =  Math.random()*5 + 3;
+    this.vx = (Math.random()-0.5)*500;
+    this.vy = (Math.random()-0.5)*500;
   }
-  this.vx = (Math.random()-0.5)*500;
-  this.vy = (Math.random()-0.5)*500;
+
   this.accX = 0;
   this.accY = 0;
   this.friction = Math.random()*0.05 + 0.90;
@@ -142,7 +147,7 @@ function initScene(){
   let initamount = 300;
 
   if (canvas.width <= 600) {
-    initamount = 80;
+    initamount = 60;
   } else if (canvas.width <= 1024) {
     initamount = 150;
   } else {

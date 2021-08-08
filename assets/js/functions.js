@@ -63,13 +63,13 @@ $( document ).ready(function() {
 
   });
 
-  $('.cta').hover(function(){
-    $(this).toggleClass('rainbow-bg');
-  });
+  // $('.cta').hover(function(){
+  //   $(this).toggleClass('rainbow-bg');
+  // });
 
-  $('label').hover(function(){
-    $(this).toggleClass('rainbow-border');
-  });
+  // $('label').hover(function(){
+  //   $(this).toggleClass('rainbow-border');
+  // });
 
   // swipe support for touch devices
   var targetElement = document.getElementById('viewport'),
