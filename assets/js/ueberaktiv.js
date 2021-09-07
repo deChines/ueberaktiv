@@ -5,9 +5,9 @@ var canvas = document.querySelector("#scene"),
   mouse = {x:0,y:0},
   radius = 1;
 
-//var colors = ["rgb(0,0,0,0.8)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.8)", "rgb(0,0,0,0.7)", "rgb(255, 80, 80)"];
-var colors = ["rgb(255, 0, 0)","rgb(255, 0, 0)","rgb(255, 30, 30)","rgb(255, 10, 10)","rgb(255, 10, 10)","rgb(255, 10, 10)", "rgb(255, 80, 80)", "rgb(255, 80, 80)"];
-// var colors = "rgb(0,0,0,0.8)";
+var colors = ["rgb(0,0,0,0.8)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.8)", "rgb(0,0,0,0.7)"]; //, "rgb(255, 80, 80)"
+//var colors = ["rgb(255, 0, 0)","rgb(255, 0, 0)","rgb(255, 30, 30)","rgb(255, 10, 10)","rgb(255, 10, 10)","rgb(255, 10, 10)", "rgb(255, 80, 80)", "rgb(255, 80, 80)"];
+//var colors = "rgb(0,0,0,0.8)";
 
 var text = document.querySelector("#text");
 var mobileText = document.querySelector("#mobileText");

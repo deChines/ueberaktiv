@@ -1,0 +1,42 @@
+.team-grid
+  position: relative
+  display: flex
+  width: 960px
+  max-width: 80%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+  @media (max-width: 1180px)
+    max-width: 100%
+
+  &--container
+    height: 475px
+    border: #fff solid 5px
+    background: #fff
+  
+  h2
+    margin: 0 0 20px 0
+    font-size: 30px
+    text-align: center
+
+  img 
+    max-width: 100%
+
+  img:hover
+    opacity: 0.5
+    cursor: pointer
+
+  .img-grid
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+    grid-gap: 5px
+
+  @media only screen and (min-width: 750px)
+    .img-grid
+      grid-template-columns: repeat(2, 1fr)
+
+  @media only screen and (min-width: 970px)
+    .img-grid
+      grid-template-columns: repeat(4, 1fr)
