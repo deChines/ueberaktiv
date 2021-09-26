@@ -259,7 +259,7 @@ $( document ).ready(function() {
 
     });
 
-  }
+  } 
 
   function transitionLabels() {
 
@@ -279,6 +279,17 @@ $( document ).ready(function() {
 
     });
 
+  }
+
+  function confettiHover() {
+    var conffetiButton = document.getElementById("confetti")
+    console.log("triggered");
+    conffetiButton.show;
+  }
+
+  function confettiOver() {
+    var conffetiButton = document.getElementById("confetti")
+    conffetiButton.hidden;
   }
 
   outerNav();

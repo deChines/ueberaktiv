@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body onresize>
-
+  <canvas id="confetti" hidden></canvas>
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
@@ -109,14 +109,14 @@
               <h2>Members</h2>
               <div class="team-grid--container">
                 <div class="img-grid">
-                  <img src="https://static.pexels.com/photos/160107/pexels-photo-160107.jpeg" alt="">
-                  <img src="https://static.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="">
-                  <img src="https://static.pexels.com/photos/373076/pexels-photo-373076.jpeg" alt="">
-                  <img src="https://static.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg" alt="">
-                  <img src="https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg" alt="">
-                  <img src="https://static.pexels.com/photos/247932/pexels-photo-247932.jpeg" alt="">
-                  <img src="https://static.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="">
-                  <img src="https://static.pexels.com/photos/450035/pexels-photo-450035.jpeg" alt="">
+                  <img src="assets/img/1x/Zeichenfläche 5_1.png" alt="">
+                  <img src="assets/img/1x/Zeichenfläche 5_2.png" alt="">
+                  <img src="assets/img/1x/Zeichenfläche 5_3.png" alt="">
+                  <img src="assets/img/1x/Zeichenfläche 5_4.png" alt="">
+                  <img src="assets/img/1x/Zeichenfläche 5_5.png" alt="">
+                  <img src="assets/img/1x/Zeichenfläche 5_6.png" alt="">
+                  <img src="assets/img/1x/Zeichenfläche 5_7.png" alt="">
+                  <img src="assets/img/1x/Zeichenfläche 5.png" alt="">
                 </div>
               </div>
             </div>
@@ -324,7 +324,7 @@
                     <label for="email">Email</label>
                   </div>
                 </div>
-                <input type="submit" value="Send Request">
+                <input type="submit" value="Send Request" onmouseover="confettiHover()" onmouseout="">
               </form>
             </div>
           </li>
@@ -346,5 +346,6 @@
 <script src="assets/js/vendor/hammer-2.0.8.js"></script>
 <script src="assets/js/functions.js"></script>
 <script src="assets/js/ueberaktiv.js"></script>
+<script src="assets/js/confetti.js"></script>
 </body>
 </html>

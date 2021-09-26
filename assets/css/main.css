@@ -932,7 +932,7 @@ body canvas {
 }
 .team-grid .img-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
 }
 @media only screen and (min-width: 750px) {
@@ -1149,7 +1149,7 @@ body canvas {
   background-image: url("../../assets/img/work/3.jpg");
 }
 .about--banner .item-4 {
-  background-image: url("../../assets/img/work/4.png");
+  background-image: url("../../assets/img/work/4.jpg");
 }
 .about--banner .item-5 {
   background-image: url("../../assets/img/work/5.jpg");
@@ -1371,6 +1371,17 @@ body canvas {
 }
 
 @media (max-width: 767px) {
+  .work-request--information {
+    flex-direction: column;
+    width: 100%;
+    height: 64px !important;
+  }
+
+  .information-name,
+.information-email {
+    width: 100% !important;
+  }
+
   .work-request--options {
     flex-direction: row;
     justify-content: space-around;
@@ -1404,13 +1415,11 @@ body canvas {
   }
 }
 @media (max-width: 600px) {
-  .work-request--information {
-    margin-bottom: 30px;
-  }
   .work-request--information .information-name,
 .work-request--information .information-email {
     height: 40px;
     font-size: 24px;
+    padding-bottom: 12px;
   }
 }
 .perspective {
