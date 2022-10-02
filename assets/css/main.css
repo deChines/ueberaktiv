@@ -576,6 +576,9 @@ body canvas {
   display: flex;
   justify-content: center;
 }
+.intro--banner a {
+  all: unset;
+}
 .intro--banner::before {
   content: "";
   position: absolute;
