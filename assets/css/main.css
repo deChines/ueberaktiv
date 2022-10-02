@@ -578,6 +578,8 @@ body canvas {
 }
 .intro--banner a {
   all: unset;
+  color: #0c0c0c;
+  text-decoration: none;
 }
 .intro--banner::before {
   content: "";
