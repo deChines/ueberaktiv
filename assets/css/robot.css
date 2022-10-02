@@ -19,7 +19,7 @@
     -moz-animation: before 0.3s steps(1) infinite;
     -o-animation: before 0.3s steps(1) infinite;
     animation: before 0.3s steps(1) infinite;
-    transition: .2s ease-in-out;
+    /* transition: .2s ease-in-out; */
   }
   @-webkit-keyframes before { 0% { opacity: 1; } 50% { opacity: 0; }}
   @-moz-keyframes before { 0% { opacity: 1; } 50% { opacity: 0; }}
@@ -32,7 +32,7 @@
     -moz-animation: after 0.3s steps(1) infinite;
     -o-animation: after 0.3s steps(1) infinite;
     animation: after 0.3s steps(1) infinite;
-    transition: .2s ease-in-out;
+    /* transition: .2s ease-in-out; */
   }
   @-webkit-keyframes after { 0% { opacity: 0; } 50% { opacity: 1; } }
   @-moz-keyframes after { 0% { opacity: 0; } 50% { opacity: 1; } }
