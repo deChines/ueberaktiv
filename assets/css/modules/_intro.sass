@@ -134,6 +134,9 @@
       height: 350px
       margin-top: 63px
 
+      @media (max-width: 767px) and (min-width: 601px) and (max-height: 680px)
+        margin-top: 0
+
       h1
         font-size: 44px
 
@@ -170,6 +173,26 @@
         display: none
 
 @media (max-width: 600px) and (max-height: 844px)
+
+  .intro
+
+    &--banner
+      padding-top: 60vh
+
+      &::before,
+      &::after
+        display: none
+
+      h1
+        margin-top: 0
+      
+      h2
+        margin-top: 0
+
+    &--options
+      display: none
+
+@media (max-width: 900px) and (max-height: 390px)
 
   .intro
 

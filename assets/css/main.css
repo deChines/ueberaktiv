@@ -375,11 +375,6 @@ body canvas {
   font-weight: 700;
   text-align: center;
 }
-@media (max-width: 767px) and (min-width: 601px) and (max-height: 680px) {
-  .device-notification {
-    display: flex;
-  }
-}
 @media (max-width: 600px) and (min-width: 480px) and (max-height: 580px) {
   .device-notification {
     display: flex;
@@ -688,12 +683,23 @@ body canvas {
     height: 350px;
     margin-top: 63px;
   }
+}
+@media (max-width: 767px) and (max-width: 767px) and (min-width: 601px) and (max-height: 680px) {
+  .intro--banner {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
   .intro--banner h1 {
     font-size: 44px;
   }
+}
+@media (max-width: 767px) {
   .intro--banner h2 {
     font-size: 44px;
   }
+}
+@media (max-width: 767px) {
   .intro--options {
     display: block;
   }
@@ -722,6 +728,23 @@ body canvas {
   }
 }
 @media (max-width: 600px) and (max-height: 844px) {
+  .intro--banner {
+    padding-top: 60vh;
+  }
+  .intro--banner::before, .intro--banner::after {
+    display: none;
+  }
+  .intro--banner h1 {
+    margin-top: 0;
+  }
+  .intro--banner h2 {
+    margin-top: 0;
+  }
+  .intro--options {
+    display: none;
+  }
+}
+@media (max-width: 900px) and (max-height: 390px) {
   .intro--banner {
     padding-top: 60vh;
   }

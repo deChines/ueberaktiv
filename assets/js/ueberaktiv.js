@@ -126,7 +126,7 @@ function initScene(){
   let textPos = wh/2;
 
   if (canvas.width <= 767 && canvas.width > 600) {
-    textPos = wh/3;
+    textPos = wh/2.25;
   }
   if (canvas.width <= 600) {
       if (canvas.height <= 843) {
