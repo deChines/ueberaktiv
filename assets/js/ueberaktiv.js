@@ -5,7 +5,7 @@ var canvas = document.querySelector("#scene"),
   mouse = {x:0,y:0},
   radius = 1;
 
-var colors = ["rgb(0,0,0,0.8)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.8)", "rgb(0,0,0,0.7)", "rgb(255, 80, 80)"]; //, "rgb(255, 80, 80)"
+var colors = ["rgb(0,0,0,0.8)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.9)","rgb(0,0,0,0.8)", "rgb(0,0,0,0.7)"]; //, "rgb(255, 80, 80)"
 //var colors = ["rgb(255, 0, 0)","rgb(255, 0, 0)","rgb(255, 30, 30)","rgb(255, 10, 10)","rgb(255, 10, 10)","rgb(255, 10, 10)", "rgb(255, 80, 80)", "rgb(255, 80, 80)"];
 //var colors = "rgb(0,0,0,0.8)";
 
@@ -129,10 +129,10 @@ function initScene(){
     textPos = wh/3;
   }
   if (canvas.width <= 600) {
-      if (canvas.height <= 812) {
+      if (canvas.height <= 843) {
         textPos = wh/2.5;
       } else {
-        let textPos = wh/5;
+        textPos = wh/2.5;
       }
     wrapText(ctx, mobileText.value, ww/1.85, textPos, canvas.width, ww/3.5);
   } else {
